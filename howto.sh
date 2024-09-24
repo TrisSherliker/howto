@@ -2,8 +2,8 @@
 
 # An AI helper script for learning linux.
 ## Goal: to ingest a natural language command, and use ollama to output a command.
-## Written by hand as a learning exercise, with extensive reference to:
-## https://github.com/TNG/please-cli by thomas-endres-tng
+## Written by hand by Tristan Sherliker as a learning exercise, with extensive reference to 
+## and inspiration from: https://github.com/TNG/please-cli by thomas-endres-tng
 
 explain=0
 version="howto v0.0.2, 2024-09-24"
