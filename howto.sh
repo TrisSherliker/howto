@@ -2,8 +2,8 @@
 
 # An AI helper script for learning linux.
 ## Goal: to ingest a natural language command, and use ollama to output a command.
-## Written by hand by Tristan Sherliker as a learning exercise, with extensive reference to 
-## and inspiration from: https://github.com/TNG/please-cli by thomas-endres-tng
+## Written by hand as a learning exercise, with extensive reference to and insp-
+## iration from: https://github.com/TNG/please-cli by thomas-endres-tng
 
 explain=0
 version="howto v0.0.2, 2024-09-24"
@@ -149,13 +149,13 @@ check_dangerous_commands() {
   for item in "${!dangerous_commands[@]}"; do
     if echo "$output" | grep -w "$item" &> /dev/null; then
       echo -e "\e[31m###################################################################"
-      echo -e "#                                                                 #"
-      echo -e "#                           WARNING                               #"
-      echo -e "#                                                                 #"
-      echo -e "# This command contains '$item', which can be dangerous              #"
-      echo -e "# because that command ${dangerous_commands[$item]}.                      #"
-      echo -e "# Do you really want to take that advice from this AI?            #"
-      echo -e "#                                                                 #"
+      echo -e "!                                                                 "
+      echo -e "!                           WARNING                               "
+      echo -e "!                                                                 "
+      echo -e "! This command contains '$item', which can be dangerous              "
+      echo -e "! because that command ${dangerous_commands[$item]}                       "
+      echo -e "! Do you really want to take that advice from this AI?            "
+      echo -e "!                                                                 "
       echo -e "###################################################################\e[0m"
     fi
 #     break
