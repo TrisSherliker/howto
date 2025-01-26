@@ -1,6 +1,6 @@
 # howto
 
-`howto` is a small helper for the Linux shell command line.  When you're stuck with which command to type next, aren't sure how to achieve what you need, or don't know whether a tool exists to do it, `howto` will provide you with one or more options to explore. 
+`howto` is a toy project experikenting with local LLMs. It's a small helper for the Linux shell command line, similar to (but vastly less capable than) Github Copilot.  When you're stuck with which command to type next, aren't sure how to achieve what you need, or don't know whether a tool exists to do it, `howto` will provide you with one or more options to explore. 
 
 
 `howto` is heavily inspired by [thomas-enders-TNG's `please-cli`](https://github.com/TNG/please-cli), which performs the same basic function but does it better (and with much more functionality) with ChatGPT using an OpenAI API key. By contrast, `howto` uses a small local LLM via Ollama, with a prompt to coax it into returning what's needed. This has the benefits of (+) keeping your discussions private and (+) working free of charge, at the expense of (-) local resources (-) being worse at its job. 
